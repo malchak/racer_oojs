@@ -1,0 +1,26 @@
+
+
+  <script>
+    gameId = <%= @game.id %>;
+  </script>
+
+ 
+  <% @game.players.each do |player| %>
+    <p><%= player.username%></p>
+  <% end %>
+
+
+  <table class="racer_table">
+    <tr id="player1_strip">
+      <td class="active"></td>
+      <td></td>
+     
+    </tr>
+    <tr id="player2_strip">
+      <td class="active"></td>
+      <td></td>
+      
+    </tr>
+  </table>
+
+
